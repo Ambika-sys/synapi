@@ -1,0 +1,17 @@
+#%RAML 1.0
+title: sync-api
+description: synchronous api
+baseUri: https://anypoint.mulesoft.com/mocking/api/v1/links/1edf5537-2a65-4f03-b0d8-b3f79d64c38b/ # baseUri: http://localhost:8081
+version: v1
+mediaType: [application/json,application/xml]
+protocols: [HTTPS,HTTP]
+/syncapi:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "Response":"synchronous api"
+              }
